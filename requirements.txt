@@ -3,3 +3,4 @@ jupyter
 numpy
 scikit-learn
 flask
+implicit
