@@ -75,7 +75,9 @@ for customer_id, count in zip(customer_ids, customer_transaction_counts):
             'price': price,
             'filiale': store_id,
             'timestamp': timestamp,
-            'is_discount_applied': is_discount_applied
+            'is_discount_applied': is_discount_applied,
+            'popularity': (random.random()),
+            'carbon_footprint': (random.uniform(50, 5000))
         })
 
 # Create DataFrame from the transactions list
