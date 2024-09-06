@@ -1,1 +1,1 @@
-# hackfestival_grpup2_schwarz_it_challenge
+# hackfestival_group2_schwarz_it_challenge
