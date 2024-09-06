@@ -36,3 +36,16 @@ body, html {
     object-fit: cover;
     z-index: 999; /* Ensure it's on top of other content */
 }
+
+/* L0 fixed at the top */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    z-index: 999; /* Ensure it stays on top of the rest of the content */
+}

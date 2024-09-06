@@ -8,6 +8,10 @@ app = Flask(__name__)
 def mainpage():
     return render_template("mainpage.html")
 
+@app.route('/discount')
+def discount():
+    return render_template("discount.html")
+
 
 @app.route('/product/<productId>/price', methods=['GET'])
 def get_product_price(productId):
