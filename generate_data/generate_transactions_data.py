@@ -4,7 +4,7 @@ import random
 from datetime import datetime, timedelta
 
 # Load the products data from CSV (assuming it's already loaded in a variable)
-product_data = pd.read_csv('data/product_data.csv')
+product_data = pd.read_csv('../data/product_data.csv')
 
 # Parameters
 n_customers = 1000  # 1,000 customers
@@ -84,6 +84,6 @@ for customer_id, count in zip(customer_ids, customer_transaction_counts):
 transactions_df = pd.DataFrame(transactions)
 
 # Save the transaction data to a CSV file
-transactions_df.to_csv('data/customer_transactions_100k.csv', index=False)
+transactions_df.to_csv('../data/customer_transactions_100k.csv', index=False)
 
 print("Transaction data generated and saved to 'customer_transactions_100k.csv'.")
