@@ -4,10 +4,14 @@ import price_calculator
 
 app = Flask(__name__)
 
-
 @app.route('/')
-def hello():
-    return render_template("index.html")
+def mainpage():
+    return render_template("mainpage.html")
+
+@app.route('/discount')
+def discount():
+    return render_template("discount.html")
+
 
 @app.route('/product/<productId>/price', methods=['GET'])
 def get_product_price(productId):
@@ -15,4 +19,4 @@ def get_product_price(productId):
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(host='0.0.0.0')

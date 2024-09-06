@@ -1,0 +1,51 @@
+/* Ensure the layout works well on mobile */
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container for the images */
+.screenshot-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Style for screenshots */
+.screenshot {
+    width: 100%; /* Full width of the screen */
+    height: auto; /* Maintain aspect ratio */
+    max-width: 600px; /* Optional: limit for larger screens */
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+}
+
+/* L4 fixed at the bottom */
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-width: 600px; /* Adjust to match other screenshots */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    z-index: 999; /* Ensure it's on top of other content */
+}
+
+/* L0 fixed at the top */
+.fixed-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: cover;
+    z-index: 999; /* Ensure it stays on top of the rest of the content */
+}
