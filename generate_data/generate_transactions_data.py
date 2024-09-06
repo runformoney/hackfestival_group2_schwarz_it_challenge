@@ -4,7 +4,7 @@ import random
 from datetime import datetime, timedelta
 
 # Load the products data from CSV
-product_data = pd.read_csv('../data/product_data.csv')
+product_data = pd.read_csv('data/product_data.csv')
 
 # Create a dictionary to map product names to IDs
 product_ids = dict(zip(product_data['name'], product_data['id']))
@@ -71,6 +71,6 @@ for _ in range(n_transactions):
 transaction_df = pd.DataFrame(transactions)
 
 # Save to CSV
-transaction_df.to_csv('../data/transactions.csv', index=False)
+transaction_df.to_csv('data/transactions.csv', index=False)
 
 print(f"Generated {len(transactions)} transactions.")
