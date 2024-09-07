@@ -16,8 +16,12 @@
             font-family: 'Helvetica', 'Arial', sans-serif;
         }
 
+        .container {
+            background-color: #ECECEC;
+        }
+
         .goal-tracker {
-            background-color: #ffffff;
+            background-color: #fff;
             padding: 15px;
             border-radius: 8px;
             margin: 10px;
@@ -66,6 +70,38 @@
             margin-left: 5px;
         }
 
+        .reward-card {
+            background-color: #F5F5F5;
+            border-radius: 10px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .reward-card h6 {
+            font-size: 11px;
+            font-weight: 400;
+            color: #0E0E0E;
+        }
+        .reward-card .reward-description {
+            font-size: 16px;
+            font-weight: bold;
+        }
+        .reward-card .free-badge {
+            background-color: #28a745;
+            color: white;
+            padding: 1px 12px;
+            border-radius: 3px;
+            font-weight: bold;
+            margin-top: 5px;
+            display: inline-block;
+            font-size: 14px;
+        }
+        .reward-card img {
+            width: 50px;
+            height: auto;
+        }
+
         .progress-bar-container {
             position: relative;
             margin: 15px;
@@ -94,15 +130,14 @@
         /* Milestone icon styles */
         .milestone-icon {
             position: absolute;
-            top: -10px;
+            top: -6px;
             transform: translateX(-25%);
-            font-size: 22px;
+            font-size: 15px;
             color: #28a745;
             background-color: white;
             border-radius: 50%;
-            border: 3px solid white;
+            border: 1px solid white;
             padding: 2px;
-            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
         }
 
         .milestone-1 {
@@ -153,8 +188,15 @@
                     <i class="fa-solid fa-tree milestone-icon milestone-4"></i>
                 </div>
                 <!-- Goal info -->
-                <div class="goal-info">
-                    <p>Nächste Stufe: 10 € Spenden für ein Brunnenbauprojekt</p>
+                <div class="reward-card">
+                    <div>
+                        <h6>Nächste Stufe</h6>
+                        <p class="reward-description">Einen Wunschbaum pflanzen</p>
+                        <span class="free-badge">gratis</span>
+                    </div>
+                    <div>
+                        <img src="static/forest-removebg-preview.png" alt="Puzzle Icon">
+                    </div>
                 </div>
             </div>
         </div>
