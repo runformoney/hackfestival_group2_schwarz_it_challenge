@@ -263,15 +263,46 @@
             font-weight: bold;
             color: #322f2f;
         }
+        .headerTxt {
+            position: absolute; /* Allows positioning on top of the image */
+            top: 60px; /* Adjust this value to position the text vertically */
+            left: 20px; /* Adjust this value to position the text horizontally *
+            padding: 100px; /* Adds padding around the text */
+        
+        }
+        
+        .fixed-top {
+
+        }
+        
+        .image-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px; /* Optional: to match the image's width */
+        }
+        
+        .overlay-text {
+            position: fixed;
+            top: 20px;
+            left: 70px;
+            font-size: 22px;
+            z-index: 1000; /* Ensure the text stays above the image */
+        }
+        
     </style>
 </head>
 <body>
 
+    <div class="image-container">
     <a href="/">
         <img src="/static/discount_header.jpg" alt="Screenshot 0" class="fixed-top">
-        LIDL Plus Angebote
+
     </a>
-    LIDL Plus Angebote
+    <div class="overlay-text">
+        <a>Saubere Angebote!</a>
+    </div>
+</div>
+
     <div class="screenshot-container">
         <div class="bundle">
         <div class="containerBundle">

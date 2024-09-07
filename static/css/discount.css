@@ -48,5 +48,5 @@ body, html {
     margin: 0;
     padding: 0;
     object-fit: cover;
-    z-index: 999; /* Ensure it stays on top of the rest of the content */
+    z-index: 999; /* Ensure the image stays on top of other content */
 }
