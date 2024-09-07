@@ -13,9 +13,11 @@ def mainpage():
 def discount():
     customer_index= random.randint(0, 999)
     recos = get_recommendations.get_all_recos(customer_index)
+    print(recos)
+    print(recos['product_bundle'])
 
     return render_template("discount.html",
-                           discount=recos['product_bundle'])
+                           discount=recos['product_bundle'], products=recos['personalized_recos'])
 
 @app.route('/bundle')
 def bundle():

@@ -16,24 +16,28 @@ def price(productId):
     full_price = product['price'].values[0]
     expiry_date = product['expiresAt'].values[0]
     popularity = product['popularity'].values[0]
-    print(f"popularity: $popularity")
+    available_stock = product['available'].values[0]
+
+    print(f"popularity: {popularity}")
     # Convert dates to days since epoch for easy subtraction
     expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
     current_date = datetime.now()
 
     remaining_time = (expiry_date - current_date).days
-    return discounted_price(full_price, remaining_time, popularity)
+    return discounted_price(full_price, remaining_time, popularity,available_stock)
 
 
-def discounted_price(full_price, remaining_time, popularity):
-    discount = discount_percent(remaining_time, (1.0 - popularity))
+def discounted_price(full_price, remaining_time, popularity, available_stock):
+    discount = discount_percent(remaining_time, popularity, available_stock)
 
     # Calculate final price
     final_price = full_price * (1 - discount)
 
     return final_price
 
-def discount_percent(remaining_time, decay_rate):
+def discount_percent(remaining_time, popularity, available_stock):
+    decay_rate = (1.0-popularity) * stock_factor(available_stock)*4
+    print(f"decay_rate: {decay_rate}= ppop:{popularity} stock_factor: {stock_factor(available_stock)}")
     if remaining_time > 10:
         return 0
     # Calculate exponential discount
@@ -43,6 +47,14 @@ def discount_percent(remaining_time, decay_rate):
         discount = 1
     # Ensure the discount is capped at 90%
     return min(discount, max_discount)
+
+def stock_factor(stock_available):
+    if stock_available >= 200-(200/3):
+        return 1.0
+    elif stock_available >= 220-2*(200/3):
+        return 0.5
+    else:
+        return 0
 
 
 ######## testing and plotting:
@@ -58,9 +70,12 @@ def plot():
     print(x)
     # corresponding y axis values
 
-    for decay_rate in np.linspace(0, 1, 10, endpoint=True):
-        y = [discount_percent(remaining_days, decay_rate) for remaining_days in x]
-        plt.plot(x, y, label=decay_rate)
+    stock = 10;
+    for popularity in np.linspace(0., 1., 20, endpoint=True):
+        print("###00"+ str(popularity))
+        y = [discount_percent(remaining_days, popularity, stock) for remaining_days in x]
+        plt.plot(x, y, label=f"popularity={popularity}")
+        plt.title(f"stock={stock}")
 
     # naming the x axis
     plt.xlabel('remaining_days')
@@ -77,6 +92,5 @@ def plot():
     plt.show()
 
 
-# testPrice()
-# plot()
-price(9126483)
+if __name__ == '__main__':
+    plot()

@@ -7,6 +7,7 @@
     <title>Mobile Screenshot Layout</title>
     <link rel="stylesheet" href="/static/css/discount.css">
     <link rel="stylesheet" href="/static/css/bundle.css">
+    <link rel="stylesheet" href="/static/css/card.css">
 </head>
 <body>
 
@@ -42,12 +43,21 @@
             </div>
 
         </div>
-
-        <img src="/static/L8.JPEG" alt="Screenshot 1" class="screenshot">
-        <img src="/static/L9.JPEG" alt="Screenshot 1" class="screenshot">
-        <img src="/static/L10.JPEG" alt="Screenshot 1" class="screenshot">
-
-        
+        <div class="grid-container bodyCard">
+            {% for product in products %}
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/static/product_images/{{ product[0] }}.jpg" alt="Item 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">{{ product[1] }}</div>
+                        <div class="product-price">€{{ "%.2f"|format(product[2]) }}</div>
+                        <div class="product-weight">{{ product[3] }} kg</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+      
         
     </div>
     <a href="/">
