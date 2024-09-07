@@ -1,5 +1,5 @@
 # Use the official Python image
-FROM python:3.12-slim
+FROM python:3
 
 # Set the working directory in the container
 WORKDIR /app
@@ -8,6 +8,9 @@ WORKDIR /app
 COPY ./ /app
 
 # Install any necessary dependencies
+RUN apt-get update && \
+apt-get --yes install build-essential ninja-build
+RUN pip install --upgrade pip
 RUN pip install -r requirements.txt
 
 # Make port 5000 available to the world outside this container
