@@ -7,7 +7,7 @@ import random
 PRODUCT_DATA = pd.read_csv("data/product_data_with_carbon_footprint.csv")
 PRODUCT_DATA_DICT = dict(zip(PRODUCT_DATA['id'],
                              PRODUCT_DATA[['id', 'name',
-                                           'price', 'carbon_footprint']].values.tolist()))
+                                           'price', 'price', 'carbon_footprint']].values.tolist()))
 
 # Load the saved ALS model from "../model" folder
 def load_model():
