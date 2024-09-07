@@ -7,16 +7,16 @@ import matplotlib.pyplot as plt
 # Sample data: ProductId and corresponding prices
 
 product_data = pd.read_csv('data/product_data.csv')
+product_data['popularity']=0.5
 
 max_discount = 0.9
-decay_rate = 1
-
 
 def price(productId):
-    full_price = product_data['price']
-    expiry_date = product_data['expiresAt']
-    popularity = product_data['popularity']
-
+    product = product_data.loc[product_data['id']==productId]
+    full_price = product['price'].values[0]
+    expiry_date = product['expiresAt'].values[0]
+    popularity = product['popularity'].values[0]
+    print(f"popularity: $popularity")
     # Convert dates to days since epoch for easy subtraction
     expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
     current_date = datetime.now()
@@ -33,7 +33,6 @@ def discounted_price(full_price, remaining_time, popularity):
 
     return final_price
 
-
 def discount_percent(remaining_time, decay_rate):
     if remaining_time > 10:
         return 0
@@ -47,12 +46,8 @@ def discount_percent(remaining_time, decay_rate):
 
 
 ######## testing and plotting:
-
-full_price = 49.99
-
-
 def testPrice():
-
+    full_price = 49.99
     for remaining_time in range(12, 0, -1):
         print(discounted_price(full_price, remaining_time, 0.5))
 
@@ -82,5 +77,6 @@ def plot():
     plt.show()
 
 
-testPrice()
-plot()
+# testPrice()
+# plot()
+price(9126483)
