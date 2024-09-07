@@ -4,3 +4,4 @@ numpy
 scikit-learn
 flask
 implicit
+matplotlib
