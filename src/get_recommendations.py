@@ -3,11 +3,12 @@ from scipy.sparse import csr_matrix
 import pandas as pd
 from src.config import PRODUCT_BUNDLES
 import random
+from src.price_calculator import price
 
 PRODUCT_DATA = pd.read_csv("data/product_data_with_carbon_footprint.csv")
 PRODUCT_DATA_DICT = dict(zip(PRODUCT_DATA['id'],
                              PRODUCT_DATA[['id', 'name',
-                                           'price', 'price', 'carbon_footprint']].values.tolist()))
+                                           'price', 'carbon_footprint']].values.tolist()))
 
 # Load the saved ALS model from "../model" folder
 def load_model():
@@ -52,7 +53,10 @@ def recommend_products(customer_index, num_recommendations=20):
     return recommended_product_ids if recommended_product_ids else "No valid recommendations"
 
 def get_product_data(product_id):
-    return PRODUCT_DATA_DICT.get(product_id)
+    product_data = PRODUCT_DATA_DICT.get(product_id)
+    product_data.insert(3, price(product_id))
+    print(product_data)
+    return product_data
 
 def get_all_recos(customer_index):
     personalized_recos = recommend_products(customer_index)
