@@ -24,7 +24,7 @@ def price(productId):
     expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
     current_date = datetime.now()
 
-    remaining_time = (expiry_date - current_date).days
+    remaining_time = (expiry_date - current_date).total_seconds()/86400
     return discounted_price(full_price, remaining_time, popularity,available_stock)
 
 
