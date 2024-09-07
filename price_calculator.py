@@ -77,6 +77,5 @@ def plot():
     plt.show()
 
 
-# testPrice()
-# plot()
-price(9126483)
+if __name__ == '__main__':
+    plot()
