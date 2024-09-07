@@ -20,7 +20,7 @@ def discount():
                            discount=recos['product_bundle'],
                            products=recos['personalized_recos'])
 
-@app.route('/bundle')
+@app.route('/bund')
 def bundle():
     return render_template("bundle.html")
 

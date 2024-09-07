@@ -19,32 +19,39 @@
         .header {
             margin-bottom: 20px;
         }
+        .back-button {
+            color: #007bff;
+            font-size: 24px;
+            text-decoration: none;
+        }
         .header h1 {
-            margin: 0;
+            margin: 10px 0;
             font-size: 24px;
         }
-        .date-range {
+        .subtitle {
             color: #666;
             font-size: 14px;
+            margin-bottom: 20px;
         }
         .product-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
-            gap: 15px;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
         }
         .product-card {
             background-color: white;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: relative;
         }
         .product-image {
             width: 100%;
-            height: 150px;
-            background-color: #f0f0f0;
+            height: 200px;
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: white;
         }
         .product-image img {
             max-width: 100%;
@@ -52,37 +59,59 @@
             object-fit: contain;
         }
         .product-info {
-            padding: 10px;
+            padding: 15px;
         }
         .product-name {
             font-weight: bold;
             margin-bottom: 5px;
         }
-        .product-price {
-            font-size: 18px;
-            color: #1a5f7a;
-            margin-bottom: 5px;
-        }
-        .product-weight {
-            color: #666;
-            font-size: 12px;
-        }
         .product-date {
             color: #666;
-            font-size: 12px;
-            margin-top: 5px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .price-box {
+            background-color: #003399;
+            color: white;
+            padding: 5px 10px;
+            display: inline-block;
+        }
+        .old-price {
+            text-decoration: line-through;
+            font-size: 14px;
+        }
+        .new-price {
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .discount-badge {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            background-color: #ffcc00;
+            color: black;
+            padding: 2px 5px;
+            font-weight: bold;
         }
         .add-button {
-            background-color: #f0f0f0;
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background-color: #e0e0e0;
             border: none;
             width: 30px;
             height: 30px;
             border-radius: 50%;
             font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             cursor: pointer;
-            position: absolute;
-            right: 10px;
-            bottom: 10px;
+        }
+        .additional-info {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
         }
     </style>
 </head>
@@ -120,24 +149,37 @@
             </div>
 
         </div>
-         <div class="product-grid">
+    </div>
+    <div class="product-grid">
         {% for product in products %}
         <div class="product-card">
             <div class="product-image">
                 <img src="/static/product_images/{{ product[0] }}.jpg" alt="{{ product[1] }}">
             </div>
+            <button class="add-button">+</button>
+            {% if product[2] != product[3] %}
+            <div class="discount-badge">-{{ ((1 - product[2] / product[3]) * 100) | round | int }}%</div>
+            {% endif %}
             <div class="product-info">
                 <div class="product-name">{{ product[1] }}</div>
-                <div class="product-price">€{{ "%.2f"|format(product[2]) }}</div>
-                <div class="product-weight">{{ product[4] }} kg</div>
                 <div class="product-date">06.09. - 07.09.</div>
-                <button class="add-button">+</button>
+                <div class="price-box">
+                    {% if product[2] != product[3] %}
+                    <div class="old-price">€{{ "%.2f"|format(product[3]) }}</div>
+                    {% endif %}
+                    <div class="new-price">€{{ "%.2f"|format(product[2]) }}</div>
+                </div>
+                <div class="additional-info">
+                    {% if product[1] == "Mumm Jahrgangssekt" %}
+                    1 l = 4.44<br>
+                    Je 0,75 l (Max. 24 Stück)
+                    {% else %}
+                    {{ product[4] }} kg
+                    {% endif %}
+                </div>
             </div>
         </div>
         {% endfor %}
-    </div>
-      
-        
     </div>
     <a href="/">
         <img src="/static/L12.JPEG" alt="Screenshot 2" class="fixed-bottom">
