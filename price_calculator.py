@@ -80,4 +80,5 @@ def plot():
     plt.show()
 
 # testPrice()
-plot()
+if __name__ == '__main__':
+    plot()
