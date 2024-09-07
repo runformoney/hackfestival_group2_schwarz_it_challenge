@@ -9,9 +9,8 @@ body, html {
 
 /* Container for the images */
 .screenshot-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    padding-left: 10px
+    align-items: right;
     padding-top: 100px; /* Adjust to the height of the fixed top image */
     padding-bottom: 100px; /* Adjust to the height of the fixed bottom image */
 }

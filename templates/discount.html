@@ -167,6 +167,102 @@
         max-height: 2.4em; /* Adjust based on your font size and line height */
         line-height: 1.2em; /* Adjust as needed */
     }
+        .bundle {
+            font-family: Arial, sans-serif;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 37vh;
+        }
+
+        .containerBundle {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            text-align: left;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .headerBundle {
+            background-color: #d4edc9;
+            padding: 10px;
+            font-size: 14px;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .items {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 20px;
+        }
+
+        .item {
+            width: 30%;
+            text-align: center;
+        }
+
+        .item img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 10px;
+        }
+
+        .item-name {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .item-price {
+            color: #888;
+        }
+
+        .price-container-bundle {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+                max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+        }
+
+        .discount-bundle {
+            background-color: #ffcc00;
+            padding: 5px 10px;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+
+        .price-bundle {
+            font-size: 24px;
+            font-weight: bold;
+            position: relative;
+                background-color: #003399;
+    color: white;
+    padding: 5px 10px;
+    display: inline-block;
+    position: relative;
+}
+
+
+        .co2-savings-bundle {
+            background-color: #d4edc9;
+            padding: 5px 10px;
+            border-radius: 4px;
+            margin-top: -80px;
+            text-align: center;
+        }
+
+        .plus-bundle {
+            display: flex;
+            align-items: center;
+            font-size: 18px;
+            font-weight: bold;
+            color: #322f2f;
+        }
     </style>
 </head>
 <body>
@@ -178,33 +274,37 @@
     LIDL Plus Angebote
     <div class="screenshot-container">
         <div class="bundle">
-            <div class="containerBundle">
-                <div class="headerBundle">
-                    YOU SAVE 2KG CO2 WITH THIS BUY
-                </div>
-                <div class="items">
-                    <div class="item">
-                        <img src="/static/product_images/{{ discount[0][0] }}.jpg" alt="Item 1">
-                        <a>{{ discount[0][1] }}</a>
-                    </div>
-                    <div class="plus">+</div>
-                    <div class="item">
-                        <img src="/static/product_images/{{ discount[1][0] }}.jpg" alt="Item 1">
-                        <a>{{ discount[1][1] }}</a>
-                    </div>
-                    <div class="plus">+</div>
-                    <div class="item">
-                        <img src="/static/product_images/{{ discount[2][0] }}.jpg" alt="Item 1">
-                        <a>{{ discount[2][1] }}</a>
-                    </div>
-                </div>
-                <div class="price-container">
-                    <div class="discount">-40%</div>
-                    <div class="price">10.50€</div>
-                </div>
-            </div>
+        <div class="containerBundle">
+            {% set total_co2_savings = products|sum(attribute=4) %}
+            {% set total_original_price = products|sum(attribute=2) %}
+            {% set total_discounted_price = products|sum(attribute=3) %}
+            {% set discount_percentage = (total_original_price - total_discounted_price)|round|int %}
 
+            <div class="headerBundle">
+               Du sparst {{ total_co2_savings|round(2) }}kg CO₂ mit diesem Kauf.
+            </div>
+            <div class="items">
+                {% for product in discount %}
+                    {% if not loop.first %}
+                        <div class="plus-bundle">+</div>
+                    {% endif %}
+                    <div class="item">
+                        <img src="/static/product_images/{{ product[0] }}.jpg" alt="{{ product[1] }}">
+                        <div class="item-name-bundle">{{ product[1] }}</div>
+                        <div class="item-price-bundle">€{{ product[3] }} <span style="text-decoration: line-through; color: #aaa;">€{{ product[2] }}</span></div>
+                    </div>
+                {% endfor %}
+            </div>
+            <div class="price-container-bundle">
+                <div class="discount-bundle">-{{ discount_percentage }}%</div>
+                <div class="price-bundle">€{{ (total_discounted_price / 10) | round(2) }}</div>
+
+            </div>
+<!--            <div class="co2-savings-bundle">-->
+<!--                {{ total_co2_savings|round(2) }} kg (CO2)-->
+<!--            </div>-->
         </div>
+    </div>
     </div>
     <div class="product-grid">
     {% for product in products %}
