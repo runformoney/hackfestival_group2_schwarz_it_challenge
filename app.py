@@ -13,7 +13,6 @@ def mainpage():
 def discount():
     customer_index= random.randint(0, 999)
     recos = get_recommendations.get_all_recos(customer_index)
-    print(recos['product_bundle'])
 
     return render_template("discount.html",
                            discount=recos['product_bundle'])
