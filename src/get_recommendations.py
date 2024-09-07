@@ -6,7 +6,12 @@ import random
 import datetime
 from src.price_calculator import price
 
+
+def convert_date(__date):
+    return datetime.datetime.strptime(__date, '%Y-%m-%d').strftime('%d.%m.')
+
 PRODUCT_DATA = pd.read_csv("data/product_data_with_carbon_footprint.csv")
+PRODUCT_DATA.expiresAt = PRODUCT_DATA.expiresAt.apply(convert_date)
 PRODUCT_DATA_DICT = dict(zip(PRODUCT_DATA['id'],
                              PRODUCT_DATA[['id', 'name',
                                            'price', 'carbon_footprint', 'expiresAt']].values.tolist()))
