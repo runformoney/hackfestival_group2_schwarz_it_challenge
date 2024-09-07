@@ -53,6 +53,8 @@ def testPrice():
     for remaining_time in range(12,0, -1):
         print(discounted_price(full_price, remaining_time))
 
+
+
 def plot():
     # x axis values
     x = [remaining_days for remaining_days in range(15,-1,-1)]
@@ -68,7 +70,12 @@ def plot():
     plt.xlabel('remaining_days')
     # naming the y axis
     plt.ylabel('discounted price')
-    plt.xticks(ticks=x, labels=[remaining_days for remaining_days in range(15, -1, -1)])
+
+    # Reverse the x-axis so it starts at 15 and ends at 0
+    plt.xlim(15, 0)
+
+    # Set tick marks on the x-axis
+    plt.xticks(ticks=x)
 
     # function to show the plot
     plt.show()
