@@ -113,6 +113,59 @@
             color: #666;
             margin-top: 5px;
         }
+        .price-box {
+        background-color: #003399;
+        color: white;
+        padding: 5px 10px;
+        display: inline-block;
+        position: relative;
+    }
+
+    .old-price {
+        text-decoration: line-through;
+        font-size: 14px;
+    }
+
+    .new-price {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .discount-badge {
+        position: absolute;
+        top: -15px;
+        left: 5px;
+        background-color: #ffcc00;
+        color: black;
+        padding: 2px 5px;
+        font-weight: bold;
+        font-size: 12px;
+    }
+
+    .co2-box {
+        display: inline-block;
+        background-color: #4CAF50;
+        color: white;
+        padding: 2px 5px;
+        border-radius: 4px;
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .leaf-icon {
+        margin-right: 3px;
+    }
+        .product-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: 2.4em; /* Adjust based on your font size and line height */
+        line-height: 1.2em; /* Adjust as needed */
+    }
     </style>
 </head>
 <body>
@@ -151,36 +204,40 @@
         </div>
     </div>
     <div class="product-grid">
-        {% for product in products %}
-        <div class="product-card">
-            <div class="product-image">
-                <img src="/static/product_images/{{ product[0] }}.jpg" alt="{{ product[1] }}">
+    {% for product in products %}
+    <div class="product-card">
+        <div class="product-image">
+            <img src="/static/product_images/{{ product[0] }}.jpg" alt="{{ product[1] }}">
+        </div>
+        <button class="add-button">+</button>
+        <div class="product-info">
+            <div class="product-name">{{ product[1] }}</div>
+            <div class="product-date">06.09. - 07.09.</div>
+            <div class="price-box">
+                {% if product[2] != product[3] %}
+                <div class="old-price">€{{ "%.2f"|format(product[2]) }}</div>
+                {% endif %}
+                <div class="new-price">€{{ "%.2f"|format(product[3]) }}</div>
+                {% if product[2] != product[3] %}
+                <div class="discount-badge">{{ ((1 - product[2] / product[3]) * 100) | round | int }}%</div>
+                {% endif %}
             </div>
-            <button class="add-button">+</button>
-            {% if product[2] != product[3] %}
-            <div class="discount-badge">{{ ((1 - product[2] / product[3]) * 100) | round | int }}%</div>
-            {% endif %}
-            <div class="product-info">
-                <div class="product-name">{{ product[1] }}</div>
-                <div class="product-date">06.09. - 07.09.</div>
-                <div class="price-box">
-                    {% if product[2] != product[3] %}
-                    <div class="old-price">€{{ "%.2f"|format(product[2]) }}</div>
-                    {% endif %}
-                    <div class="new-price">€{{ "%.2f"|format(product[3]) }}</div>
-                </div>
-                <div class="additional-info">
-                    {% if product[1] == "Mumm Jahrgangssekt" %}
-                    1 l = 4.44<br>
-                    Je 0,75 l (Max. 24 Stück)
-                    {% else %}
+            <div class="additional-info">
+                {% if product[1] == "Mumm Jahrgangssekt" %}
+                1 l = 4.44<br>
+                Je 0,75 l (Max. 24 Stück)
+                {% else %}
+                <div class="co2-box">
+<!--                    <span class="leaf-icon">🍃</span>-->
+                    <img src = 'static/leaf.png' width="10%" >
                     {{ product[4] }} kg
-                    {% endif %}
                 </div>
+                {% endif %}
             </div>
         </div>
-        {% endfor %}
     </div>
+    {% endfor %}
+</div>
     <a href="/">
         <img src="/static/L12.JPEG" alt="Screenshot 2" class="fixed-bottom">
     </a>
