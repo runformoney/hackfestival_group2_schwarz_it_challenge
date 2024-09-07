@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 
 # Sample data: ProductId and corresponding prices
 
-product_data = pd.read_csv('data/product_data.csv')
+product_data = pd.read_csv('data/product_data_with_carbon_footprint.csv')
 product_data['popularity']=0.5
 
 max_discount = 0.9
