@@ -6,22 +6,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Mobile Screenshot Layout</title>
     <link rel="stylesheet" href="/static/css/discount.css">
+    <link rel="stylesheet" href="/static/css/bundle.css">
+    <link rel="stylesheet" href="/static/css/card.css">
 </head>
 <body>
 
     <a href="/">
         <img src="/static/L11.JPEG" alt="Screenshot 0" class="fixed-top">
     </a>
-    
-
     <div class="screenshot-container">
-        <img src="/static/L8.JPEG" alt="Screenshot 1" class="screenshot">
-        <img src="/static/L9.JPEG" alt="Screenshot 1" class="screenshot">
-        <img src="/static/L10.JPEG" alt="Screenshot 1" class="screenshot">
+        <div class="bundle">
+            <div class="containerBundle">
+                <div class="headerBundle">
+                    YOU SAVE 2KG CO2 WITH THIS BUY
+                </div>
+                <div class="items">
+                    <div class="item">
+                        <img src="/static/product_images/{{ discount[0][0] }}.jpg" alt="Item 1">
+                        <a>{{ discount[0][1] }}</a>
+                    </div>
+                    <div class="plus">+</div>
+                    <div class="item">
+                        <img src="/static/product_images/{{ discount[1][0] }}.jpg" alt="Item 1">
+                        <a>{{ discount[1][1] }}</a>
+                    </div>
+                    <div class="plus">+</div>
+                    <div class="item">
+                        <img src="/static/product_images/{{ discount[2][0] }}.jpg" alt="Item 1">
+                        <a>{{ discount[2][1] }}</a>
+                    </div>
+                </div>
+                <div class="price-container">
+                    <div class="discount">-40%</div>
+                    <div class="price">10.50€</div>
+                </div>
+            </div>
 
-        
+        </div>
+        <div class="grid-container bodyCard">
+            {% for product in products %}
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="/static/product_images/{{ product[0] }}.jpg" alt="Item 1">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-name">{{ product[1] }}</div>
+                        <div class="product-price">€{{ "%.2f"|format(product[2]) }}</div>
+                        <div class="product-weight">{{ product[3] }} kg</div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+      
         
     </div>
-    <img src="/static/L12.JPEG" alt="Screenshot 2" class="fixed-bottom">
+    <a href="/">
+        <img src="/static/L12.JPEG" alt="Screenshot 2" class="fixed-bottom">
+    </a>
+    
 </body>
 </html>

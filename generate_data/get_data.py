@@ -18,7 +18,7 @@ if response.status_code == 200:
     # Save data to a JSON file
     import pandas as pd
 
-    pd.DataFrame(data).to_csv("data/product_data.csv", index=False)
+    pd.DataFrame(data).to_csv("../data/product_data.csv", index=False)
 
     print("Data saved to 'data.json'.")
 else:

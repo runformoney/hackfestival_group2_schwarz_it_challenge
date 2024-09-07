@@ -1,0 +1,354 @@
+id,name,expiresAt,price,weight,packagingUnit,available,carbon_footprint
+8376291,Organic Cherry Tomatoes,2024-09-23,2.99,250g,punnet,48,0.12
+5728364,Sweet Potatoes,2024-10-15,1.79,1kg,bag,23,0.6
+9126483,Broccoli Florets,2024-09-18,2.49,400g,bag,17,0.24
+4537281,Red Bell Peppers,2024-12-02,1.29,500g,each,62,0.25
+1928374,Baby Spinach,2024-09-27,3.99,150g,bag,8,0.09
+6273849,White Onions,2025-01-10,0.79,1kg,bag,41,0.6
+3847295,Carrots,2024-11-28,1.49,1kg,bag,35,0.6
+7129384,Garlic Bulb,2025-03-15,0.99,100g,each,78,0.05
+2938475,Green Zucchini,2024-09-21,1.99,500g,each,29,0.25
+8472931,Asparagus,2024-09-16,4.99,250g,bunch,12,0.125
+5362819,Mushrooms,2024-09-29,2.79,250g,punnet,5,0.15
+1928379,Avocados,2024-10-05,2.29,200g,each,34,0.1
+7283944,Cucumbers,2024-11-12,1.19,500g,each,27,0.25
+9182736,Kale,2024-09-19,3.49,200g,bag,14,0.12
+4827395,Red Onions,2025-02-22,0.89,1kg,bag,53,0.6
+2738491,Lemons,2024-12-18,0.69,100g,each,89,0.05
+6372819,Ginger,2025-04-05,1.59,100g,each,62,0.05
+8293746,Celery Stalks,2024-10-29,1.89,400g,bunch,21,0.2
+3748291,Green Beans,2024-09-25,2.69,250g,bag,19,0.15
+1827364,Sweet Corn,2024-11-08,1.39,500g,each,47,0.25
+5728391,Butternut Squash,2024-10-21,2.49,1kg,each,12,0.5
+9126423,Cauliflower Head,2024-09-26,1.99,700g,each,25,0.35
+4537221,Yellow Bell Peppers,2024-10-12,1.39,500g,each,31,0.25
+1928314,Arugula,2024-09-19,2.99,100g,bag,6,0.06
+6273899,Shallots,2024-11-05,1.29,500g,bag,38,0.3
+3847235,Parsnips,2024-10-08,1.79,1kg,bag,29,0.6
+7129324,Fresh Turmeric Root,2025-02-18,2.19,100g,each,15,0.05
+2938415,Yellow Zucchini,2024-12-29,2.29,500g,each,22,0.25
+8472991,Brussels Sprouts,2024-10-14,3.49,500g,bag,18,0.3
+5362899,Portobello Mushrooms,2025-01-22,3.99,250g,punnet,11,0.15
+1928396,Roma Tomatoes,2024-09-28,2.59,500g,punnet,43,0.3
+7283965,Leeks,2024-11-19,1.49,500g,each,21,0.25
+9182796,Swiss Chard,2025-03-08,2.79,200g,bag,16,0.12
+4827315,Pickling Onions,2024-10-25,1.19,500g,bag,47,0.3
+2738411,Limes,2024-12-05,0.59,100g,each,74,0.05
+6372899,Fresh Galangal,2025-01-15,2.89,100g,each,8,0.05
+8293766,Fennel Bulb,2024-11-22,1.69,400g,each,26,0.2
+3748211,Sugar Snap Peas,2024-09-17,3.29,250g,bag,14,0.15
+1827394,Rainbow Chard,2025-02-01,3.79,200g,bag,9,0.12
+9876543,Radishes,2024-10-03,1.09,250g,bunch,33,0.125
+3456789,Organic Spinach,2024-10-25,2.99,200g,bag,17,0.09600000000000002
+1298765,Green Bell Pepper,2024-09-22,0.79,150g,each,28,0.075
+9876547,Baby Carrots,2024-11-01,1.49,500g,bag,42,0.3
+8765439,Red Onion,2024-10-18,0.69,150g,each,35,0.075
+5678901,Garlic Bulb,2024-12-15,0.99,100g,each,51,0.05
+2345678,Celery Sticks,2024-09-29,1.29,400g,bag,23,0.24
+7654321,Sweet Potatoes,2025-01-05,1.99,1kg,bag,39,0.6
+4321098,Cherry Tomatoes,2024-09-15,2.79,250g,punnet,19,0.15
+1098765,Asparagus Spears,2024-10-02,3.99,200g,bunch,13,0.1
+9012345,Brokkoli,2024-11-20,2.29,600g,each,27,0.3
+6789012,Ginger Root,2024-12-28,1.79,100g,each,45,0.05
+3210987,Green Beans,2024-09-20,2.49,250g,bag,21,0.15
+8901234,Corn on the Cob,2024-10-10,1.19,150g,each,33,0.075
+5432109,Avocados,2025-02-12,1.89,150g,each,49,0.075
+2109876,Cucumber,2024-09-27,0.89,200g,each,37,0.1
+7890123,White Mushrooms,2024-11-14,2.99,250g,punnet,25,0.15
+4567890,Iceberg Lettuce,2024-10-05,1.59,500g,each,41,0.25
+1234560,Potatoes,2025-03-01,0.99,1kg,bag,53,0.6
+9087654,Sweet Peppers Mix,2024-10-29,2.69,500g,bag,15,0.3
+7412589,Pink Lady Apples,2024-10-20,2.49,1kg,bag,40,0.6
+3698521,Black Grapes,2024-09-18,3.99,500g,punnet,12,0.3
+1478523,Pineapple,2024-10-02,2.99,1.2kg,each,25,0.6
+9632587,Mango,2024-09-25,1.79,300g,each,31,0.15
+8521479,Watermelon,2024-12-15,5.99,3kg,each,8,1.5
+2589631,Cantaloupe Melon,2024-11-05,3.49,1.5kg,each,16,0.75
+4789632,Strawberries,2024-09-16,4.29,250g,punnet,28,0.15
+9512368,Blueberries,2025-01-20,5.79,125g,punnet,45,0.075
+6541239,Raspberries,2024-09-28,4.99,125g,punnet,19,0.075
+3578521,Kiwi,2024-10-12,0.79,100g,each,52,0.05
+1596324,Passion Fruit,2025-03-05,1.29,100g,each,33,0.05
+8963257,Pomegranate,2024-11-18,2.89,250g,each,21,0.125
+7895214,Nectarines,2024-09-22,3.29,500g,punnet,17,0.3
+2365874,Apricots,2024-10-28,4.59,250g,punnet,29,0.15
+5896321,Plums,2025-02-10,2.99,500g,punnet,38,0.3
+4125879,Figs,2024-09-19,6.99,200g,punnet,14,0.12
+9874125,Blood Oranges,2024-11-02,2.19,1kg,bag,26,0.6
+6235897,Clementines,2024-12-28,1.99,500g,bag,41,0.3
+2587413,Grapefruit,2025-01-15,1.49,400g,each,18,0.2
+7412583,Green Apples,2024-10-26,1.99,1kg,bag,35,0.6
+7412365,Honeycrisp Apples,2024-10-25,3.29,1kg,bag,28,0.6
+3987521,Red Seedless Grapes,2024-09-21,4.59,500g,punnet,33,0.3
+1596387,Golden Pineapple,2024-10-09,3.79,1.5kg,each,19,0.75
+9632527,Ataulfo Mangoes,2025-01-18,2.29,350g,each,22,0.175
+8521439,Mini Watermelon,2024-11-01,4.19,1.8kg,each,15,0.9
+2589693,Galia Melon,2024-10-18,2.99,1.2kg,each,29,0.6
+4789698,Organic Strawberries,2025-02-15,5.59,250g,punnet,11,0.12
+9512362,Blackberries,2024-09-29,6.29,125g,punnet,26,0.075
+6541295,Golden Raspberries,2024-11-22,5.99,125g,punnet,17,0.075
+3578585,Green Kiwifruit,2024-10-29,1.19,150g,each,38,0.075
+1596389,Banana Passion Fruit,2025-03-12,1.99,120g,each,23,0.06
+8963251,Organic Pomegranate,2024-11-15,3.59,300g,each,35,0.12
+7895278,White Nectarines,2024-10-05,4.19,600g,punnet,21,0.36
+2365812,Black Apricots,2025-01-25,5.29,300g,punnet,13,0.18
+5896387,Black Plums,2024-12-02,3.79,600g,punnet,47,0.36
+4125835,Brown Turkey Figs,2024-09-26,7.99,250g,punnet,9,0.15
+9874189,Cara Cara Oranges,2024-10-12,2.89,1.2kg,bag,42,0.72
+6235837,Honey Tangerines,2025-02-22,2.59,600g,bag,31,0.36
+2587475,Pink Grapefruit,2024-11-29,2.19,500g,each,27,0.25
+3271859,Ground Cinnamon,2025-04-12,2.49,50g,jar,32,0.025
+8172635,Dried Oregano,2025-02-28,1.99,25g,jar,18,0.0125
+4569283,Whole Black Peppercorns,2024-09-25,3.79,100g,grinder,25,0.05
+9823714,Smoked Paprika,2025-01-15,2.99,75g,jar,14,0.0375
+1736482,Ground Turmeric,2024-10-02,2.29,100g,pouch,41,0.05
+6285319,Crushed Chili Flakes,2025-06-21,1.79,50g,jar,28,0.025
+5319827,Sea Salt Flakes,2025-08-18,2.59,125g,box,35,0.0625
+2846391,Dried Rosemary,2024-09-29,1.99,30g,jar,21,0.015
+7193528,Ground Cumin,2025-03-05,1.89,100g,pouch,19,0.05
+8352917,Bay Leaves,2025-09-12,2.19,10g,jar,48,0.005
+4928173,Ground Coriander,2024-10-18,2.39,75g,jar,33,0.0375
+6173825,Garlic Powder,2025-07-25,1.69,100g,bottle,26,0.05
+2958174,Onion Powder,2025-05-09,1.59,75g,bottle,17,0.0375
+7284639,Dried Basil,2024-09-17,2.09,20g,jar,39,0.01
+1835297,Dried Thyme,2025-11-02,1.79,25g,jar,22,0.0125
+3749285,Ground Nutmeg,2025-03-18,2.79,40g,jar,23,0.02
+5928374,Whole Cloves,2025-05-12,3.29,50g,jar,45,0.025
+1928473,Star Anise,2024-09-22,4.59,20g,jar,17,0.01
+7364829,Cardamom Pods,2025-07-29,5.99,50g,jar,31,0.025
+2837462,Saffron Threads,2025-09-15,12.99,1g,jar,8,0.0005
+8472935,Pink Himalayan Salt,2025-12-02,4.29,250g,grinder,38,0.125
+9283746,Black Mustard Seeds,2024-10-14,2.89,100g,bag,26,0.06
+1728394,Fenugreek Seeds,2025-02-22,3.59,100g,bag,19,0.06
+6283749,Cumin Seeds,2025-04-05,2.79,100g,bag,42,0.06
+3847294,Coriander Seeds,2024-09-18,3.19,100g,bag,35,0.06
+5928364,Dried Tarragon,2025-06-15,4.89,15g,jar,21,0.0075
+7283945,Herbes de Provence,2025-10-28,5.29,30g,jar,14,0.015
+1928376,Poultry Seasoning,2024-11-12,3.99,50g,jar,29,0.025
+8374925,Pumpkin Pie Spice,2025-01-10,4.59,75g,jar,18,0.0375
+4729381,Apple Pie Spice,2025-08-05,3.79,60g,jar,25,0.03
+2638517,Organic Whole Milk,2024-10-25,3.99,1L,Carton,12,0.4
+5194823,Cheddar Cheese Slices,2024-12-01,2.79,250g,Package,8,0.125
+9473625,"Greek Yogurt, Honey Flavour",2024-10-18,1.49,150g,Cup,24,0.075
+1837592,Unsalted Butter,2024-11-15,4.29,250g,Block,15,0.125
+6285931,Lactose-Free Milk,2024-10-28,3.89,1L,Carton,5,0.5
+3729184,Sour Cream,2024-11-08,2.19,200g,Tub,10,0.1
+8592736,"Mozzarella Cheese, Shredded",2025-01-10,3.49,150g,Bag,12,0.075
+4172958,"Vanilla Yogurt, Low Fat",2024-10-22,1.29,100g,Cup,18,0.05
+7361829,"Parmesan Cheese, Grated",2025-02-15,5.99,100g,Jar,6,0.05
+2958371,Whipping Cream,2024-10-16,2.99,250ml,Carton,9,0.5
+6182735,Cottage Cheese,2024-11-02,2.59,250g,Tub,7,0.125
+5293847,Swiss Cheese,2024-12-28,6.79,100g,Package,4,0.05
+8472193,"Strawberry Yogurt, Greek Style",2024-10-29,1.69,175g,Cup,15,0.0875
+1928375,Salted Butter,2024-11-22,4.19,250g,Block,11,0.125
+7291836,"Soy Milk, Unsweetened",2025-01-05,3.29,1L,Carton,8,0.5
+3847248,Cream Cheese,2024-11-12,2.89,200g,Tub,13,0.1
+5928376,Feta Cheese,2024-12-18,4.59,200g,Tub,5,0.1
+1729384,"Blueberry Yogurt, Low Fat",2024-10-19,1.39,125g,Cup,20,0.0625
+6283745,Gorgonzola Cheese,2025-03-08,7.29,100g,Package,3,0.05
+9384725,Coconut Milk,2025-02-22,3.59,400ml,Can,10,0.5
+1678923,Semi-Skimmed Milk,2024-10-23,2.99,1L,Carton,15,0.5
+5792836,Gouda Cheese,2024-12-15,5.29,200g,Package,7,0.1
+8263741,Mango Yogurt,2024-10-17,1.19,125g,Cup,22,0.0625
+3947285,Butter Milk,2024-11-10,2.49,500ml,Bottle,11,0.5
+7129385,Provolone Cheese,2025-01-22,6.99,150g,Package,4,0.075
+2836475,"Peach Yogurt, Greek Style",2024-10-27,1.59,180g,Cup,16,0.09
+9128374,Ricotta Cheese,2024-11-05,3.79,250g,Tub,9,0.125
+4728395,Edam Cheese,2024-12-20,4.89,250g,Block,6,0.125
+6384729,"Raspberry Yogurt, Low Fat",2025-01-08,1.35,130g,Cup,19,0.065
+1928378,Mascarpone Cheese,2024-11-13,5.59,250g,Tub,5,0.125
+5728396,"Almond Milk, Unsweetened",2025-02-18,3.19,1L,Carton,10,0.5
+8293745,Double Cream,2024-10-19,2.79,200ml,Carton,8,0.5
+3748296,Parmigiano Reggiano Cheese,2025-03-12,8.99,100g,Wedge,3,0.05
+1827395,Lemon Yogurt,2024-10-21,1.25,150g,Cup,21,0.075
+9876542,Halloumi Cheese,2024-11-28,4.29,200g,Package,7,0.1
+3456782,Vanilla Soy Milk,2025-01-15,3.39,1L,Carton,9,0.5
+1298762,Crème Fraîche,2024-11-07,2.69,200ml,Tub,12,0.5
+9876549,Pecorino Romano Cheese,2025-02-25,7.49,100g,Wedge,4,0.05
+8765432,"Plain Yogurt, Greek Style",2024-10-25,1.45,500g,Tub,14,0.25
+5678902,Oat Milk,2025-01-29,3.09,1L,Carton,8,0.5
+7162534,Smoked Salmon Fillet,2024-10-25,12.99,200g,piece,8,0.1
+5839172,Frozen Cod Fillets,2025-03-15,7.99,1000g,pack,25,0.5
+2947618,Fresh Tuna Steak,2024-09-18,19.99,250g,piece,5,0.125
+8462951,Canned Sardines in Oil,2026-01-10,2.49,120g,can,48,0.06
+3718529,Fresh Salmon Fillets,2024-09-22,14.99,500g,pack,12,0.25
+9273645,Frozen Shrimp (peeled & deveined),2025-08-02,11.99,500g,bag,30,0.3
+1635847,Smoked Mackerel Fillet,2024-11-05,8.49,150g,piece,18,0.075
+6482915,Canned Tuna in Brine,2025-12-18,1.99,185g,can,62,0.0925
+4591726,Fresh Tilapia Fillets,2024-09-16,9.99,400g,pack,9,0.2
+2837469,Frozen Salmon Burgers,2025-04-22,6.99,400g,pack,21,0.2
+7529183,Smoked Haddock Fillet,2024-10-30,9.79,175g,piece,15,0.0875
+1948273,Canned Anchovies in Oil,2026-05-08,3.29,50g,can,38,0.025
+5283749,Fresh Swordfish Steak,2024-09-20,22.99,300g,piece,4,0.15
+8374622,Frozen Fish Fingers,2025-07-12,5.49,300g,pack,35,0.15
+4917283,Smoked Trout Fillet,2024-11-12,10.99,180g,piece,11,0.09
+2635847,Canned Salmon in Water,2025-09-28,2.79,213g,can,55,0.1065
+9182735,Fresh Red Snapper,2024-09-17,18.49,1000g,piece,3,0.5
+6428375,Frozen Haddock Fillets,2025-06-05,8.79,800g,pack,28,0.4
+3579182,Smoked Kipper,2024-10-28,6.29,125g,piece,19,0.0625
+7293844,Canned Tuna in Oil,2026-03-11,2.19,185g,can,71,0.0925
+1947236,Wild Alaskan Salmon Fillets,2024-10-23,16.99,550g,pack,7,0.275
+5826371,Fresh Atlantic Cod,2024-09-21,12.49,1200g,piece,3,0.6
+8471925,Smoked Herring Fillets in Oil,2025-04-18,7.29,200g,jar,22,0.1
+3628174,Frozen Breaded Fish Sticks,2025-11-07,4.99,450g,pack,41,0.225
+9172538,Fresh Rainbow Trout,2024-09-19,13.79,600g,piece,6,0.3
+2736488,Frozen White Fish Fillets,2025-07-29,8.99,800g,pack,27,0.4
+7582916,Canned Mackerel in Tomato Sauce,2026-02-15,2.89,200g,can,58,0.1
+4819273,Fresh Sea Bass,2024-09-25,19.49,850g,piece,2,0.425
+6293748,Frozen Breaded Shrimp,2025-09-04,10.49,400g,bag,33,0.24
+1728395,Smoked Salmon (Sliced),2024-11-01,14.29,100g,pack,14,0.05
+5927364,Canned Tuna Chunks in Oil,2026-06-22,2.39,170g,can,65,0.085
+8374621,Fresh Halibut Steaks,2024-09-28,21.99,650g,pack,4,0.325
+2839174,Frozen Whiting Fillets,2025-05-14,6.79,1000g,pack,29,0.5
+7162539,Smoked Cod Fillets (Peppered),2024-10-27,9.99,175g,piece,17,0.0875
+4528361,Canned Sardines in Tomato Sauce,2025-12-05,2.69,125g,can,51,0.0625
+9273648,Fresh Monkfish Fillets,2024-09-15,17.99,450g,pack,8,0.225
+3618274,Frozen Salmon Fillets (Skinless),2025-08-19,15.49,500g,pack,19,0.25
+8472936,Smoked Mackerel (Whole),2024-11-09,11.29,250g,piece,12,0.125
+2937485,Canned Tuna in Spring Water,2026-03-28,2.09,185g,can,78,0.0925
+1728364,Fresh Swordfish Steaks,2024-09-23,23.99,700g,pack,5,0.35
+1378925,Beef Tenderloin Steak,2024-10-23,24.99,0.5,kg,8,0.5
+5628473,Pork Chops (Boneless),2024-10-17,7.99,1,kg,15,0.5
+9273851,Chicken Breast Fillets,2024-09-28,6.49,0.5,kg,23,0.5
+4827935,Ground Beef (Lean),2024-12-05,5.99,0.5,kg,12,0.5
+2738591,Lamb Leg Roast,2024-11-12,19.99,2,kg,6,0.5
+6384927,Salmon Fillet (Skin On),2024-10-21,12.99,0.25,kg,18,0.5
+1947283,Turkey Breast (Sliced),2025-01-15,8.79,0.2,kg,10,0.5
+5283741,Duck Breast (Frozen),2025-03-08,15.49,0.35,kg,5,0.5
+8374629,Veal Cutlets,2024-11-29,21.99,0.4,kg,3,0.5
+4917285,Ground Pork,2024-10-19,6.29,1,kg,9,0.5
+2635849,Beef Short Ribs,2024-12-28,13.79,1.5,kg,4,0.5
+9182739,Chicken Thighs (Boneless),2024-09-25,5.89,0.8,kg,17,0.5
+6428371,Smoked Bacon,2024-11-05,9.99,0.2,kg,11,0.5
+3579184,Beef Sirloin Steak,2025-02-14,18.49,0.3,kg,7,0.5
+7293842,Pork Loin Roast,2024-10-30,7.29,1.8,kg,13,0.5
+1947238,Chicken Drumsticks,2024-09-22,4.79,1.2,kg,20,0.5
+5826379,Ground Lamb,2024-12-01,8.59,0.5,kg,8,0.5
+8471923,Beef Brisket,2025-01-22,11.99,2.5,kg,5,0.5
+3628172,Turkey Sausages,2024-11-18,6.99,0.3,kg,14,0.5
+9172536,Chicken Wings,2024-10-05,5.29,1,kg,22,0.5
+5137829,Organic Grass-Fed Beef Patties,2024-12-15,7.99,0.4,kg,12,0.4
+8926451,Free-Range Chicken Leg Quarters,2024-09-23,4.59,1.2,kg,18,0.5
+3475912,Smoked Pork Belly,2024-11-08,10.99,0.8,kg,7,0.5
+1592638,Grass-Fed Lamb Chops,2025-01-03,22.49,0.6,kg,5,0.5
+7263845,Wild-Caught Cod Fillets,2024-10-19,13.29,0.45,kg,14,0.5
+2849173,Organic Ground Turkey,2024-12-21,7.29,0.75,kg,9,0.4
+6152847,Peking Duck (Whole),2025-02-18,18.99,1.8,kg,3,0.5
+9374521,Veal Scaloppine,2024-11-26,23.99,0.35,kg,6,0.5
+4827359,Pork Spare Ribs,2024-10-28,9.49,1.5,kg,11,0.5
+1529384,Chicken Sausage (Italian),2024-09-21,6.79,0.55,kg,16,0.5
+7293856,Beef Eye Round Roast,2025-01-11,12.59,2.2,kg,4,0.5
+3847298,"Chicken Breast (Skinless, Boneless)",2024-09-26,5.99,1,kg,21,0.5
+9126487,Applewood Smoked Bacon,2024-11-02,11.49,0.3,kg,8,0.5
+5728369,Sirloin Steak (Grass-Fed),2025-02-09,19.99,0.4,kg,7,0.5
+2938476,Pork Tenderloin Medallions,2024-10-25,8.89,0.65,kg,13,0.5
+8472938,Chicken Drumsticks (Organic),2024-09-19,5.29,1.1,kg,19,0.4
+1928377,Ground Lamb (Lean),2024-12-18,9.79,0.6,kg,10,0.5
+6273850,Beef Chuck Roast,2025-01-25,10.99,2.8,kg,5,0.5
+3847299,Turkey Kielbasa Sausage,2024-11-15,7.49,0.45,kg,14,0.5
+7129386,Chicken Wings (Party Pack),2024-10-03,4.99,1.5,kg,22,0.5
+7175923,Salami Napoli Sliced,2024-10-25,3.99,200g,Package,12,0.1
+3948572,Smoked Ham Bavarian Style,2024-12-05,5.79,250g,Package,8,0.125
+1629485,Pepperoni Sticks Spicy,2024-09-18,2.49,150g,Bag,25,0.075
+8573629,Black Forest Ham Sliced,2024-11-12,6.89,175g,Package,5,0.0875
+2735918,Chorizo Sausage Mild,2024-10-11,4.29,200g,Package,18,0.1
+9482736,Prosciutto Crudo Sliced,2025-01-15,12.99,100g,Package,3,0.05
+5291382,Bratwurst White Sausage,2024-09-28,3.79,400g,Package,10,0.2
+4182735,Landjäger Dry Cured Sausage,2025-03-08,1.99,50g,Piece,30,0.025
+6372918,Mortadella Bologna Sliced,2024-10-21,7.49,250g,Package,6,0.125
+1827365,Cumberland Sausage Spicy,2024-11-03,5.29,400g,Package,14,0.2
+7293846,Beef Jerky Original,2025-02-12,8.99,100g,Bag,22,0.05
+3847291,Salami Milano Sliced,2024-10-17,4.69,150g,Package,9,0.075
+9182733,Smoked Bacon Sliced,2024-09-23,6.29,250g,Package,11,0.125
+5283744,Frankfurter Sausage,2024-10-05,4.99,300g,Package,17,0.15
+2736481,Coppa Italian Dry-cured Ham,2025-04-21,11.99,125g,Package,4,0.0625
+8374625,Nürnberger Sausage,2024-10-14,3.59,500g,Package,19,0.25
+4917287,Bresaola Air-dried Beef,2025-01-28,14.99,80g,Package,2,0.04
+1628374,Cabanossi Spicy Sausage,2024-11-27,2.79,100g,Stick,28,0.05
+7293845,Lyoner Sausage Sliced,2024-09-30,5.49,200g,Package,7,0.1
+3847296,Teewurst German Sausage Spread,2024-12-18,2.99,150g,Tube,15,0.075
+1379284,Whole Wheat Spaghetti,2025-03-12,2.99,500g,Pack,24,0.25
+5937482,Quinoa,2024-10-23,4.79,1kg,Bag,8,0.5
+2837465,Corn Flakes,2025-01-19,3.29,750g,Box,15,0.375
+7492837,Brown Rice,2024-11-05,2.69,1kg,Bag,32,0.5
+9283741,Oatmeal,2025-04-08,3.99,1kg,Bag,12,0.5
+1728396,Couscous,2024-09-18,2.49,500g,Bag,27,0.25
+6283741,Polenta,2025-02-28,1.99,1kg,Bag,18,0.5
+3847293,Buckwheat,2024-12-01,3.79,500g,Bag,5,0.25
+5928371,Millet,2025-06-15,2.89,1kg,Bag,11,0.5
+8374628,Barley,2024-10-14,2.29,1kg,Bag,29,0.5
+4917286,Rye Bread,2024-09-27,4.59,700g,Loaf,6,0.35
+2635841,Baguettes (2 pieces),2024-09-15,2.79,400g,Pack,13,0.2
+9182734,Croissants (6 pieces),2024-09-12,3.89,300g,Pack,21,0.15
+6428379,Tortillas (6 pieces),2024-11-28,2.99,350g,Pack,19,0.175
+3579186,Pita Bread (4 pieces),2025-05-09,1.79,200g,Pack,26,0.1
+7293841,Naan Bread (2 pieces),2024-12-24,3.49,250g,Pack,17,0.125
+1947235,Gluten-Free Bread,2025-01-05,5.29,400g,Loaf,9,0.2
+5826375,Rice Cakes,2025-07-22,1.99,100g,Pack,31,0.05
+8471926,Crackers,2025-03-08,2.39,200g,Pack,14,0.1
+3628179,Cereal Bars,2025-02-15,1.49,50g,Bar,23,0.025
+2178395,Organic Spelt Flour,2025-04-12,3.49,1kg,Bag,12,0.4
+8769321,Durum Wheat Semolina Pasta,2024-09-25,2.79,500g,Pack,24,0.25
+4359812,Instant Oatmeal with Fruits and Nuts,2025-02-19,4.29,750g,Box,15,0.375
+9218573,Basmati Rice,2024-10-15,3.99,1kg,Bag,32,0.5
+5823917,Wheat Flour,2025-05-08,1.49,1kg,Bag,12,0.5
+1937482,Instant Polenta,2024-09-18,2.99,500g,Bag,27,0.25
+7462839,Pearl Barley,2025-03-28,2.49,1kg,Bag,18,0.5
+3289174,Organic Buckwheat Groats,2024-11-01,4.99,500g,Bag,5,0.2
+6173829,Hulled Millet,2025-07-15,3.79,1kg,Bag,11,0.5
+2849175,Rye Berries,2024-10-24,2.89,1kg,Bag,29,0.5
+8375921,Sourdough Bread,2024-09-27,5.29,700g,Loaf,6,0.35
+4927385,Ciabatta Rolls (4 pieces),2024-09-15,3.49,400g,Pack,13,0.2
+1638492,Pain au Chocolat (2 pieces),2024-09-12,4.59,300g,Pack,21,0.15
+7294837,Whole Wheat Tortillas (8 pieces),2024-11-28,3.99,350g,Pack,19,0.175
+3859127,Garlic Naan Bread (2 pieces),2025-05-09,2.29,200g,Pack,26,0.1
+9127483,Gluten-Free Wraps (6 pieces),2024-12-24,4.79,250g,Pack,17,0.125
+5738291,Multigrain Bread,2025-01-05,6.29,400g,Loaf,9,0.2
+2849176,Brown Rice Cakes,2025-07-22,2.49,100g,Pack,31,0.05
+8375924,Multigrain Crackers,2025-03-08,2.99,200g,Pack,14,0.1
+4927388,Oatmeal Raisin Cookies,2025-02-15,1.99,50g,Cookie,23,0.025
+7321859,Whole Walnuts 500g,2024-10-23,4.99,500g,Bag,32,0.25
+1746293,Organic Chia Seeds 250g,2025-03-12,3.75,250g,Bag,18,0.1
+2859374,Roasted & Salted Pistachios 1kg,2024-09-18,12.99,1kg,Bag,5,0.5
+9173825,Raw Pumpkin Seeds 100g,2025-01-14,2.29,100g,Bag,42,0.05
+5294736,Sunflower Seeds Shelled 500g,2024-12-05,3.49,500g,Bag,27,0.25
+3918274,Brazil Nuts Raw 200g,2025-04-21,6.79,200g,Bag,12,0.1
+6429385,Pine Nuts 100g,2024-11-08,5.99,100g,Jar,8,0.05
+8537491,Macadamia Nuts Roasted 150g,2025-02-28,8.49,150g,Bag,6,0.075
+4628375,Flax Seeds Milled 500g,2024-10-15,4.29,500g,Bag,35,0.25
+1739284,Hemp Seeds Hulled 250g,2025-06-03,7.99,250g,Bag,19,0.125
+5847392,Cashew Nuts Unsalted 1kg,2024-09-27,9.99,1kg,Bag,14,0.5
+2958473,Pecans Halves 250g,2025-07-18,11.49,250g,Bag,9,0.125
+7162849,Hazelnuts Whole 500g,2024-11-21,6.29,500g,Bag,21,0.25
+3182746,Mixed Nuts & Berries Trail Mix 400g,2025-05-09,5.79,400g,Bag,38,0.2
+8293754,Sesame Seeds Black 100g,2024-10-05,2.79,100g,Bag,51,0.05
+4372851,Poppy Seeds 50g,2025-08-12,1.99,50g,Jar,62,0.025
+9483726,Almonds Sliced Blanched 200g,2024-12-19,7.49,200g,Bag,17,0.1
+5291837,Pumpkin Seed Butter 250g,2025-09-11,6.99,250g,Jar,11,0.125
+6382749,Sunflower Seed Butter 250g,2024-11-01,5.49,250g,Jar,23,0.125
+1492837,Tahini (Sesame Seed Paste) 500g,2025-04-30,4.99,500g,Jar,30,0.25
+3145279,"Free Range Organic Eggs, 12 pcs",2024-10-25,3.99,720g,pcs,120,0.288
+5987321,"Barn Eggs, Medium Size, 10 pcs",2024-09-18,2.79,600g,pcs,80,0.3
+7845123,"Quail Eggs, 24 pcs",2024-11-05,5.49,288g,pcs,30,0.144
+2365987,"Liquid Egg Whites, 500ml",2025-01-15,4.29,500ml,bottle,45,0.5
+4125896,"Duck Eggs, 6 pcs",2024-10-12,6.99,480g,pcs,15,0.24
+7182934,"Organic Coconut Oil, Virgin",2025-03-12,5.99,500 ml,bottle,22,0.4
+1384725,"Extra Virgin Olive Oil, Cold-Pressed",2024-09-25,12.49,1 l,bottle,8,0.5
+5927381,Sunflower Oil,2024-11-08,3.79,1 l,bottle,35,0.5
+2837496,Avocado Oil,2025-01-19,9.99,250 ml,bottle,5,0.5
+6482739,"Sesame Oil, Toasted",2024-10-15,7.29,250 ml,bottle,12,0.5
+9173824,Grapeseed Oil,2025-04-02,6.89,500 ml,bottle,18,0.5
+3591728,Walnut Oil,2024-09-18,11.99,100 ml,bottle,3,0.5
+8273946,Flaxseed Oil,2024-12-28,8.59,250 ml,bottle,9,0.5
+4728391,Organic Ghee,2025-02-05,14.99,500 ml,jar,6,0.4
+1928373,Peanut Oil,2024-10-02,4.29,1 l,bottle,27,0.5
+1379285,"Kidney Beans, Organic, 500g",2024-10-25,2.49,500g,Bag,63,0.2
+5937481,"Chickpeas, Dried, 1kg",2025-03-11,3.99,1kg,Bag,120,0.5
+2837468,"Lentils, Green, 250g",2024-09-18,1.79,250g,Bag,48,0.125
+7492831,"Black Beans, Canned, 400g",2025-08-02,1.29,400g,Can,200,0.2
+9283748,"Pinto Beans, Dried, 500g",2024-12-05,2.79,500g,Bag,75,0.25
+1728391,"Mung Beans, Whole, 1kg",2025-01-14,4.99,1kg,Bag,92,0.5
+6283742,"Fava Beans, Dried, 250g",2024-11-09,2.29,250g,Bag,35,0.125
+3847292,"Adzuki Beans, Organic, 500g",2025-04-22,3.79,500g,Bag,58,0.2
+5928372,"Soybeans, Yellow, 1kg",2024-09-29,3.29,1kg,Bag,110,0.5
+8374627,"White Beans, Canned, 400g",2025-06-17,1.19,400g,Can,180,0.2
