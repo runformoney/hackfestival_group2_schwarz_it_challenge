@@ -4,20 +4,167 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Mobile Screenshot Layout</title>
+    <title>Sustainability Goals</title>
     <link rel="stylesheet" href="/static/css/main.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+            font-family: 'Helvetica', 'Arial', sans-serif;
+        }
+
+        .goal-tracker {
+            background-color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        /* Header section styling */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+        }
+
+        .header-text {
+            font-size: 14px;
+            font-weight: 700;
+            color: #212529;
+            margin: 0;
+        }
+
+        .remaining-days {
+            font-size: 13px;
+            color: #6c757d;
+            margin-top: 2px;
+            font-weight: 400;
+        }
+
+        /* Mehr Infos styling */
+        .info-link {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            color: #0056b3;
+            text-decoration: none;
+            font-weight: 400;
+        }
+
+        .info-link:hover {
+            color: #004085;
+            text-decoration: underline;
+        }
+
+        /* Arrow icon */
+        .info-link i {
+            margin-left: 5px;
+        }
+
+        .progress-bar-container {
+            position: relative;
+            margin: 15px;
+        }
+
+        .progress-bar {
+            height: 10px;
+            border-radius: 9px;
+            background-color: #e9ecef;
+            position: relative;
+        }
+
+        .progress-bar .progress {
+            background-color: #28a745;
+            height: 100%;
+        }
+
+        .milestone-label {
+            position: absolute;
+            top: 25px;
+            font-size: 12px;
+            text-align: center;
+            color: #6c757d;
+        }
+
+        /* Milestone icon styles */
+        .milestone-icon {
+            position: absolute;
+            top: -10px;
+            transform: translateX(-25%);
+            font-size: 22px;
+            color: #28a745;
+            background-color: white;
+            border-radius: 50%;
+            border: 3px solid white;
+            padding: 2px;
+            box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+        }
+
+        .milestone-1 {
+            left: 10%;
+        }
+
+        .milestone-2 {
+            left: 35%;
+        }
+
+        .milestone-3 {
+            left: 65%;
+        }
+
+        .milestone-4 {
+            left: 100%;
+        }
+    </style>
 </head>
 <body>
     <div class="screenshot-container">
         <img src="/static/L1.JPEG" alt="Screenshot 1" class="screenshot">
         <img src="/static/L2.JPEG" alt="Screenshot 2" class="screenshot">
-        <a href="/discount">
-            <img src="/static/L5.JPEG" alt="Screenshot 2" class="screenshot">
-        </a>
+
+        <!-- DYNAMIC PROGRESS SECTION START -->
+        <div class="container">
+            <div class="goal-tracker shadow p-3">
+                <!-- Upper header section -->
+                <div class="header-section">
+                    <div>
+                        <div class="header-text">Nachhaltigkeitsziele September</div>
+                        <div class="remaining-days">22 Tage verbleibend</div>
+                    </div>
+                    <a href="#" class="info-link">
+                        Mehr Infos
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+                <!-- Progress bar section -->
+                <div class="progress-bar-container">
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+                    <!-- Milestone icons centered inside the progress bar -->
+                    <i class="fa-solid fa-tree milestone-icon milestone-1"></i>
+                    <i class="fa-solid fa-tree milestone-icon milestone-2"></i>
+                    <i class="fa-solid fa-tree milestone-icon milestone-3"></i>
+                    <i class="fa-solid fa-tree milestone-icon milestone-4"></i>
+                </div>
+                <!-- Goal info -->
+                <div class="goal-info">
+                    <p>Nächste Stufe: 10 € Spenden für ein Brunnenbauprojekt</p>
+                </div>
+            </div>
+        </div>
+        <!-- DYNAMIC PROGRESS SECTION END -->
+
         <img src="/static/L3.JPEG" alt="Screenshot 2" class="screenshot">
-        
-        
     </div>
     <img src="/static/L4.JPEG" alt="Screenshot 2" class="fixed-bottom">
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
