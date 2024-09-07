@@ -3,8 +3,11 @@ import uuid
 import random
 from datetime import datetime, timedelta
 
-# Load the products data from CSV (assuming it's already loaded in a variable)
-product_data = pd.read_csv('../data/product_data.csv')
+# Load the products data from CSV
+product_data = pd.read_csv('data/product_data.csv')
+
+# Create a dictionary to map product names to IDs
+product_ids = dict(zip(product_data['name'], product_data['id']))
 
 # Parameters
 n_customers = 1000  # 1,000 customers
@@ -27,63 +30,47 @@ def random_timestamp():
     return random_date
 
 
-# Grouping of products (based on product names)
-product_groups = {
-    'Vegetables': ['Organic Cherry Tomatoes', 'Sweet Potatoes', 'Broccoli Florets', 'Red Bell Peppers'],
-    'Greens': ['Baby Spinach']
-}
+# Ensure all product names are represented
+product_names = list(product_ids.keys())
 
-# Generating customer transaction counts (1 to 10 transactions per customer)
-customer_transaction_counts = [random.randint(1, 10) for _ in range(n_customers)]
-customer_ids = [str(uuid.uuid4()) for _ in range(n_customers)]
+# Generate transactions
+for _ in range(n_transactions):
+    transaction_id = str(uuid.uuid4())
+    customer_id = random.randint(1, n_customers)
+    product_name = random.choice(product_names)
 
-# Adjust the total transaction count to match exactly 100,000 transactions
-total_transactions = sum(customer_transaction_counts)
-adjust_factor = n_transactions / total_transactions
-customer_transaction_counts = [int(count * adjust_factor) for count in customer_transaction_counts]
+    if product_name in product_ids:
+        product_id = product_ids[product_name]
+    else:
+        continue  # Skip if the product name is not in the product_ids dictionary
 
-# Ensure exactly 100k transactions by adjusting a few values
-diff = n_transactions - sum(customer_transaction_counts)
-for i in range(diff):
-    customer_transaction_counts[i % n_customers] += 1
+    quantity = random.randint(1, 5)
+    unit_price = random.uniform(1.0, 50.0)
+    discount = 0.0
 
-# Creating transaction data
-for customer_id, count in zip(customer_ids, customer_transaction_counts):
-    for _ in range(count):
-        transaction_id = str(uuid.uuid4())
+    if random.random() < discount_probability:
+        discount = random.uniform(0.05, 0.30)  # Discount between 5% and 30%
 
-        # Randomly select a product group and product from that group
-        group = random.choice(list(product_groups.keys()))
-        product_name = random.choice(product_groups[group])
-        product = product_data[product_data['name'] == product_name].iloc[0]
+    total_price = quantity * unit_price * (1 - discount)
+    transaction_date = random_timestamp()
 
-        # Prepare transaction details
-        product_id = product['id']
-        price = product['price']
+    transactions.append({
+        'transaction_id': transaction_id,
+        'store_id': store_id,
+        'customer_id': customer_id,
+        'product_id': product_id,
+        'product_name': product_name,
+        'quantity': quantity,
+        'unit_price': unit_price,
+        'discount': discount,
+        'total_price': total_price,
+        'transaction_date': transaction_date
+    })
 
-        # Apply discount to 1% of products
-        is_discount_applied = 1 if random.random() < discount_probability else 0
+# Convert to DataFrame
+transaction_df = pd.DataFrame(transactions)
 
-        # Generate a random timestamp
-        timestamp = random_timestamp()
+# Save to CSV
+transaction_df.to_csv('data/transactions.csv', index=False)
 
-        # Create transaction entry
-        transactions.append({
-            'transaction_id': transaction_id,
-            'customer_id': customer_id,
-            'product_id': product_id,
-            'price': price,
-            'filiale': store_id,
-            'timestamp': timestamp,
-            'is_discount_applied': is_discount_applied,
-            'popularity': (random.random()),
-            'carbon_footprint': (random.uniform(50, 5000))
-        })
-
-# Create DataFrame from the transactions list
-transactions_df = pd.DataFrame(transactions)
-
-# Save the transaction data to a CSV file
-transactions_df.to_csv('../data/customer_transactions_100k.csv', index=False)
-
-print("Transaction data generated and saved to 'customer_transactions_100k.csv'.")
+print(f"Generated {len(transactions)} transactions.")

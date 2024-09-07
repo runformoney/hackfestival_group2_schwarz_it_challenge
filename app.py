@@ -12,6 +12,10 @@ def mainpage():
 def discount():
     return render_template("discount.html")
 
+@app.route('/bundle')
+def bundle():
+    return render_template("bundle.html")
+
 
 @app.route('/product/<productId>/price', methods=['GET'])
 def get_product_price(productId):
