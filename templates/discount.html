@@ -213,14 +213,14 @@
         <button class="add-button">+</button>
         <div class="product-info">
             <div class="product-name">{{ product[1] }}</div>
-            <div class="product-date">06.09. - 07.09.</div>
+            <div class="product-date">{{ now }} - {{ datetime.strptime(product[5], "%d.%m") }}</div>
             <div class="price-box">
                 {% if product[2] != product[3] %}
                 <div class="old-price">€{{ "%.2f"|format(product[2]) }}</div>
                 {% endif %}
                 <div class="new-price">€{{ "%.2f"|format(product[3]) }}</div>
                 {% if product[2] != product[3] %}
-                <div class="discount-badge">{{ ((1 - product[2] / product[3]) * 100) | round | int }}%</div>
+                <div class="discount-badge">{{ ((1 - (product[3] / product[2])) * 100) | round | int }}%</div>
                 {% endif %}
             </div>
             <div class="additional-info">
