@@ -18,7 +18,6 @@ PRODUCT_DATA_DICT = dict(zip(PRODUCT_DATA['id'],
                                            'price', 'carbon_footprint', 'expiresAt']].values.tolist()))
 
 
-
 # Load the saved ALS model from "../model" folder
 def load_model():
     with open('model/als_model.pkl', 'rb') as f:
