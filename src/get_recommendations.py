@@ -58,11 +58,13 @@ def recommend_products(customer_index, num_recommendations=20):
 
     return recommended_product_ids if recommended_product_ids else "No valid recommendations"
 
+
 def get_product_data(product_id):
     product_data = PRODUCT_DATA_DICT.get(product_id)
     product_data.insert(3, price(product_id))
     print(product_data)
     return product_data
+
 
 def get_all_recos(customer_index):
     personalized_recos = recommend_products(customer_index)
@@ -73,8 +75,6 @@ def get_all_recos(customer_index):
 
     return {"personalized_recos": personalized_recos_with_product_data,
             'product_bundle': product_bundle_with_product_data}
-
-
 
 
 MODEL = load_model()
