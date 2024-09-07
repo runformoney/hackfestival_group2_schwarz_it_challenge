@@ -215,7 +215,7 @@
         <button class="add-button">+</button>
         <div class="product-info">
             <div class="product-name">{{ product[1] }}</div>
-            <div class="product-date">{{ now }} - {{ datetime.strptime(product[5], "%d.%m") }}</div>
+            <div class="product-date">{{ now }} - {{ product[5] }}</div>
             <div class="price-box">
                 {% if product[2] != product[3] %}
                 <div class="old-price">€{{ "%.2f"|format(product[2]) }}</div>

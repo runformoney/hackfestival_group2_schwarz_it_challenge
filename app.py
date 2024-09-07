@@ -18,7 +18,7 @@ def discount():
     return render_template("discount.html",
                            discount=recos['product_bundle'],
                            products=recos['personalized_recos'],
-                           now=datetime.now().strftime("%d.%m."))
+                           now=datetime.datetime.now().strftime("%d.%m."))
 
 @app.route('/bund')
 def bundle():
