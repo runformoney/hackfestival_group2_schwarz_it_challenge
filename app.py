@@ -1,7 +1,7 @@
 from flask import Flask, render_template
 from src import get_recommendations
 import random
-from datetime import datetime
+import datetime
 app = Flask(__name__)
 
 
