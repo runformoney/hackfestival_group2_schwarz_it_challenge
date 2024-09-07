@@ -16,7 +16,7 @@ def discount():
 
     print(recos)
     return render_template("discount.html",
-                           discount=recos['product_bundle'],
+                           discount=recos['product_bundle'][0:3],
                            products=recos['personalized_recos'],
                            now=datetime.datetime.now().strftime("%d.%m."))
 
