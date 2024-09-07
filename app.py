@@ -1,7 +1,6 @@
 from flask import Flask, render_template
 from src import get_recommendations
 import random
-import price_calculator
 
 app = Flask(__name__)
 
@@ -23,11 +22,6 @@ def discount():
 @app.route('/bund')
 def bundle():
     return render_template("bundle.html")
-
-
-@app.route('/product/<productId>/price', methods=['GET'])
-def get_product_price(productId):
-    return str(price_calculator.price(productId)),200
 
 
 if __name__ == "__main__":

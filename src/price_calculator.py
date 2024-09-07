@@ -3,6 +3,7 @@ from datetime import datetime
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+import random
 
 # Sample data: ProductId and corresponding prices
 
@@ -33,11 +34,11 @@ def discounted_price(full_price, remaining_time, popularity, available_stock):
     # Calculate final price
     final_price = full_price * (1 - discount)
 
-    return final_price
+    return round(float(final_price)*random.uniform(0.5, 1), 2)
 
 def discount_percent(remaining_time, popularity, available_stock):
     decay_rate = (1.0-popularity) * stock_factor(available_stock)*4
-    print(f"decay_rate: {decay_rate}= ppop:{popularity} stock_factor: {stock_factor(available_stock)}")
+    # print(f"decay_rate: {decay_rate}= ppop:{popularity} stock_factor: {stock_factor(available_stock)}")
     if remaining_time > 10:
         return 0
     # Calculate exponential discount
