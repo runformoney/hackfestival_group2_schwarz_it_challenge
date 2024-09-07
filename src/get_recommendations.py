@@ -60,9 +60,9 @@ def recommend_products(customer_index, num_recommendations=20):
 
 
 def get_product_data(product_id):
+    print(product_id)
     product_data = PRODUCT_DATA_DICT.get(product_id)
     product_data.insert(3, price(product_id))
-    print(product_data)
     return product_data
 
 

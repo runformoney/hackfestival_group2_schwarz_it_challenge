@@ -275,9 +275,9 @@
     <div class="screenshot-container">
         <div class="bundle">
         <div class="containerBundle">
-            {% set total_co2_savings = products|sum(attribute=4) %}
-            {% set total_original_price = products|sum(attribute=2) %}
-            {% set total_discounted_price = products|sum(attribute=3) %}
+            {% set total_co2_savings = discount|sum(attribute=4) %}
+            {% set total_original_price = discount|sum(attribute=2) %}
+            {% set total_discounted_price = discount|sum(attribute=3) %}
             {% set discount_percentage = (total_original_price - total_discounted_price)|round|int %}
 
             <div class="headerBundle">
@@ -285,6 +285,7 @@
             </div>
             <div class="items">
                 {% for product in discount %}
+<!--                     {{ discount }}-->
                     {% if not loop.first %}
                         <div class="plus-bundle">+</div>
                     {% endif %}
@@ -297,7 +298,7 @@
             </div>
             <div class="price-container-bundle">
                 <div class="discount-bundle">-{{ discount_percentage }}%</div>
-                <div class="price-bundle">€{{ (total_discounted_price / 10) | round(2) }}</div>
+                <div class="price-bundle">€{{ total_discounted_price | round(2) }}</div>
 
             </div>
 <!--            <div class="co2-savings-bundle">-->
