@@ -1,20 +1,19 @@
 import math
 from datetime import datetime
+import pandas as pd
 
 import matplotlib.pyplot as plt
 
 # Sample data: ProductId and corresponding prices
-product_data = {
-    "101": (19.99,"2024-09-23"),
-    "102": (25.50,"2024-09-23")
-}
+
+product_data = pd.read_csv('data/product_data.csv')
 
 max_discount=0.9
 decay_rate = 1
 
 def price(productId):
-    full_price, expiry_date = product_data[productId]
-    # expiry date ~ 0 => max discount with threshhold
+    full_price = product_data['price']
+    expiry_date = product_data['expiresAt']
 
     # Convert dates to days since epoch for easy subtraction
     expiry_date = datetime.strptime(expiry_date, '%Y-%m-%d')
