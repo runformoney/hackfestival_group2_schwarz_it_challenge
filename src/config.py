@@ -1,4 +1,4 @@
-product_bundles = [
+PRODUCT_BUNDLES = [
     [[8376291, 'Organic Cherry Tomatoes', '2024-09-23'], [9126483, 'Broccoli Florets', '2024-09-18'], [1928374, 'Baby Spinach', '2024-09-27']],
     [[8472931, 'Asparagus', '2024-09-16'], [2938475, 'Green Zucchini', '2024-09-21'], [1928396, 'Roma Tomatoes', '2024-09-28']],
     [[3748291, 'Green Beans', '2024-09-25'], [9182736, 'Kale', '2024-09-19'], [6478321, 'Celery Sticks', '2024-09-29']],
